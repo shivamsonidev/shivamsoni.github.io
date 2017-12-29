@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+	<g>
+		<path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="25" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M29.333332777023315,495.83331879441107 C29.333332777023315,228.52209412665204 242.20073722032726,12.000002145767212 505.0000019651469,12.000002145767212 C767.7992667099666,12.000002145767212 980.6666711532705,228.52209412665204 980.6666711532705,495.83331879441107 C980.6666711532705,763.14454346217 767.7992667099666,979.6666354430548 505.0000019651469,979.6666354430548 C242.20073722032726,979.6666354430548 29.333332777023315,763.14454346217 29.333332777023315,495.83331879441107 z" id="svg_3" class=""/>
+		<path fill="#FFFFFF" d="M731.4,295.8H268.6c-18.8,0-34,15-34,33.4v341.6c0,18.4,15.2,33.4,34,33.4h462.8c18.8,0,34-15,34-33.4V329.2C765.4,310.8,750.2,295.8,731.4,295.8z M684.1,336.7L500,512L315.9,336.7H684.1z M724.6,663.3H275.4V355.1l195.7,185.7l28.9,28.9l28.9-28.9l195.7-185.7V663.3z"/>
+	</g>
+</svg>

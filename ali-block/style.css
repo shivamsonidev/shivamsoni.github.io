@@ -9,14 +9,20 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /*opacity: 0;
-    animation: fadein 1.5s ease-in forwards;*/
+}
+
+/*body {
+    opacity: 0;
+}
+
+.ready {
+    animation: fadein 2s ease-in forwards;
 }
 
 @keyframes fadein {
-    from { opacity:0; }
-    to { opacity:1; }
-}
+    from { opacity:0; transform: translateY(30vh);}
+    to { opacity:1; transform: none; }
+}*/
 
 a {
     text-decoration: none;
@@ -35,14 +41,14 @@ a:hover {
 }
 
 h1 {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 65px;
+    line-height: 67px;
     letter-spacing: 2px;
 }
 
 h2 {
-    font-size: 40px;
-    line-height: 43px;
+    font-size: 34px;
+    line-height: 30px;
 }
 
 h3 {
@@ -51,8 +57,8 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 25px;
+    line-height: 32px;
 }
 
 hr {
@@ -74,13 +80,13 @@ hr.pinkhr {
 }
 
 .p1 {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 23px;
 }
 
 .p2 {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 15px;
 }
 
 .nomar {
@@ -194,6 +200,50 @@ hr.pinkhr {
     width: 100%;
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 60px;
+        line-height: 63px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 39px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .p1 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .p2 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .pad15sm {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .pad30sm {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin-bottom: 25px;
+    }
+}
+
 @media (max-width: 767px) {
     h1 {
         font-size: 50px;
@@ -225,6 +275,9 @@ hr.pinkhr {
     .nopadbxs {
         padding-bottom: 0;
     }
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin-bottom: 15px;
+    }
 }
 
 /* Real code starts here */
@@ -252,7 +305,7 @@ hr.pinkhr {
 
 .socialpanel img {
     width: 50px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .socialpanel a .hovimg {
@@ -268,7 +321,6 @@ hr.pinkhr {
 }
 
 .headbord {
-    padding-bottom: 5px;
     border-bottom: solid 5px #ffffff;
     margin-bottom: 60px;
 }
@@ -324,6 +376,10 @@ hr.pinkhr {
     padding-right: 30px;
 }
 
+.wherebox h2 {
+    min-height: 60px;
+}
+
 .wherepanel hr, .aboutintro hr {
     border-top: solid 2px #ff7861;
     margin-top: 75px;
@@ -336,20 +392,24 @@ hr.pinkhr {
     padding-bottom: 50px;
 }
 
+.bigwhere:nth-child(2n+1) {
+    clear: both;
+}
+
 .trainbox {
     padding-left: 0;
     padding-right: 45px;
 }
 
 .buttype1 {
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 15px 25px;
     text-decoration: none !important;
 }
 
 .trainpanel .buttype1 {
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 75px;
     color: #fff;
 }
 
@@ -395,6 +455,7 @@ hr.pinkhr {
 
 .videotext {
     text-align: center;
+    margin-top: 30vh;
 }
 
 .videotext img, .videotext p {
@@ -402,7 +463,7 @@ hr.pinkhr {
 }
 
 .videotext img {
-    width: 150px;
+    width: 60px;
     margin-right: 20px;
 }
 
@@ -431,6 +492,10 @@ hr.pinkhr {
 .touchpanel p a:hover {
     color: #ff7861;
     border-bottom: 1px solid #ff7861;
+}
+
+.aboutintro {
+    padding-bottom: 0;
 }
 
 .aboutintro .container div, .aboutdesc .singentry div.rightpan {
@@ -468,4 +533,289 @@ hr.pinkhr {
 
 #aboutpage .touchpanel p {
     margin-bottom: 15px;
+}
+
+@media (min-width: 1150px) and (max-width: 1336px) {
+    .twoimgpanel .panel1 .botcaps p {
+        padding-left: 100px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1150px) {
+    .twoimgpanel .panel1 .botcaps p {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .botcaps {
+        right: 30px;
+        bottom: 20px;
+    }
+    .touchpanel .col-md-8 {
+        width: 100%;
+    }
+    .wherebox h2 {
+        min-height: 90px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .seebox:before {
+        width: 104%;
+        height: 89%;
+        margin-left: -71%;
+        transform: rotate(-49deg) scale(1.65);
+    }
+    .seebox p {
+        margin-bottom: 25px;
+    }
+    .wherebox h2 {
+        min-height: 120px;
+    }
+    .twoimgpanel .panel1 .botcaps {
+        right: 30px;
+    }
+    .botcaps {
+        right: 30px;
+        bottom: 20px;
+    }
+    .touchpanel .col-md-8 {
+        width: 90%;
+    }
+    .touchpanel p {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .justimgbox .fullpanel {
+        min-height: calc(50vh - 60px);
+    }
+    .socialpanel img {
+        width: 40px;
+        margin-right: 20px;
+    }
+    .seebox:before {
+        width: 115%;
+        height: 95%;
+        margin-left: -70%;
+        transform: rotate(-50deg) scale(1.5);
+    }
+    .seebox p {
+        margin-bottom: 25px;
+    }
+    .wherepanel{
+        padding-top: 75px;
+        padding-bottom: 25px;
+    }
+    .wherebox, .trainbox {
+        padding-bottom: 30px;
+    }
+    .wherebox h2 {
+        min-height: 80px;
+    }
+    .wherepanel hr, .aboutintro hr {
+        margin-top: 45px;
+    }
+    .trainpanel {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .trainpanel .buttype1, .touchpanel p {
+        margin-top: 20px;
+    }
+    .videotext {
+        margin-top: 15vh;
+    }
+    .beyondpanel {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .twoimgpanel .panel2 {
+        padding-left: 0;
+    }
+    .aboutintro .container div, .aboutdesc .singentry div.rightpan {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .aboutintro p {
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .justimgbox {
+        padding: 15px;
+    }
+    .justimgbox .fullpanel {
+        min-height: 40vh;
+    }
+    .toppanel {
+        padding: 0;
+        text-align: center;
+    }
+    .toppanel .fullpanel {
+        min-height: initial;
+        padding-top: 31vh;
+        background-image: url(img/xs/toppanel.jpg);
+        background-position: top center;
+        padding-bottom: 50px;
+    }
+    .toppanel h1 {
+        text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
+    }
+    .toppanel h3 {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 15px;
+    }
+    .socialpanel img {
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .seepanel {
+        text-align: center;
+        padding-top: 75px;
+    }
+    .seebox:before {
+        display: none;
+    }
+    .seebox div {
+        padding: 0 15px 30px;
+    }
+    .headbord {
+        margin-bottom: 40px;
+    }
+    .seepanel, .wherepanel {
+        padding-bottom: 20px;
+    }
+    .botcaps {
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .botcaps p {
+        text-align: center;
+        text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
+    }
+    .wherepanel, .beyondpanel {
+        padding-top: 50px;
+        text-align: center;
+    }
+    .wherepanel hr, .aboutintro hr {
+        width: 60%;
+        margin: 0 auto 50px;
+    }
+    .wherebox {
+        padding: 0 0 30px;
+    }
+    .wherebox h2 {
+        min-height: initial;
+    }
+    .wherebox h2, .beyondpanel .wherebox h3 {
+        margin-bottom: 0;
+    }
+    .wherebox h4 {
+        margin-top: 0;
+    }
+    .bigwhere .p1, .touchpanel p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .trainpanel {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .trainpanel h3, .trainbox {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .trainpanel .buttype1 {
+        margin-top: 30px;
+        letter-spacing: 1.1px;
+        font-size: 12px;
+    }
+    .trainbox .p1 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .beyondpanel, .aboutdesc {
+        padding-bottom: 0;
+    }
+    .twoimgpanel .panel2 {
+        padding-left: 0;
+    }
+    .videotext {
+        margin-top: 12.5vh;
+    }
+    .videotext img {
+        width: 40px;
+    }
+    .touchpanel, .aboutintro {
+        padding: 0;
+    }
+    .touchpanel .fullpanel {
+        padding: 50px 30px;
+    }
+    .touchpanel h1 {
+        margin-bottom: 20px;
+    }
+    .touchpanel .socialpanel img {
+        width: 45px;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .touchpanel p, #aboutpage .touchpanel p {
+        margin-bottom: 5px;
+    }
+    .aboutintro.justimgbox {
+        text-align: center;
+    }
+    .aboutintro h1 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .aboutintro h3, .aboutintro p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .aboutintro h3, .aboutdesc .singentry p {
+        margin-bottom: 0;
+    }
+    .aboutintro .fullpanel {
+        margin-top: -58px;
+        padding: 20px;
+    }
+    .aboutintro .container.padtb100, .aboutdesc {
+        padding-top: 50px;
+    }
+    .aboutintro .container div {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .aboutintro p, .aboutdesc .singentry h4 {
+        margin-bottom: 15px;
+    }
+    #scalexs {
+        display: none;
+    }
+    .readmore {
+        padding-top: 30px;
+    }
+    .readmore.dissed {
+        padding-top: 0;
+    }
+    .readmore .buttype1, .readmore .buttype1:hover {
+        color: #ff7861;
+        border-color: #ff7861;
+    }
+    .aboutdesc .singentry div.rightpan {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
