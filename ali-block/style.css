@@ -11,6 +11,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*body {
     opacity: 0;
 }
@@ -48,17 +61,17 @@ h1 {
 
 h2 {
     font-size: 34px;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 h3 {
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 25px;
+    line-height: 32px;
 }
 
 h4 {
-    font-size: 25px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 hr {
@@ -86,7 +99,7 @@ hr.pinkhr {
 
 .p2 {
     font-size: 13px;
-    line-height: 15px;
+    line-height: 18px;
 }
 
 .nomar {
@@ -250,15 +263,15 @@ hr.pinkhr {
         line-height: 53px;
     }
     h2 {
-        font-size: 30px;
-        line-height: 39px;
+        font-size: 25px;
+        line-height: 34px;
     }
     h3 {
         font-size: 20px;
         line-height: 24px;
     }
     h4 {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
     }
     .p1 {
@@ -282,62 +295,63 @@ hr.pinkhr {
 
 /* Real code starts here */
 
+#landpage .toppanel .textpanel .col-md-6 {
+    opacity: 0;
+}
+.textup {
+    animation: txtfadein 1s ease-out forwards;
+}
+@keyframes txtfadein {
+    from { opacity:0; transform: translateY(20px);}
+    to { opacity:1; transform: none; }
+}
 .justimgbox {
     padding: 30px;
 }
-
 .justimgbox .fullpanel {
     background-size: cover;
     padding: 6vw;
     min-height: calc(100vh - 60px);
 }
-
 .botcaps {
     position: absolute;
     right: 30px;
     bottom: 30px;
 }
-
 .toppanel .fullpanel {
     background-image: url(img/toppanel.jpg);
     background-position: center;
 }
-
+.toppanel .socialpanel {
+    padding-top: 20px;
+}
 .socialpanel img {
     width: 50px;
     margin-right: 20px;
 }
-
 .socialpanel a .hovimg {
     display: none;
 }
-
 .socialpanel a:hover .hovimg {
     display: inline-block;
 }
-
 .socialpanel a:hover .nonhovimg {
     display: none;
 }
-
 .headbord {
-    border-bottom: solid 5px #ffffff;
+    border-bottom: solid 4px #ffffff;
     margin-bottom: 60px;
 }
-
 .seepanel {
     padding-bottom: 50px;
 }
-
 .seepanel h3 {
     display: inline-block;
 }
-
 .seebox {
     overflow: hidden;
 }
-
-.seebox:before {
+/*.seebox:before {
     content: '';
     position: absolute;
     width: 109%;
@@ -347,192 +361,226 @@ hr.pinkhr {
     opacity: 0.17;
     transform-origin: left;
     transform: rotate(-45deg) scale(1.5);
-}
-
+}*/
 .seebox div {
     padding: 45px 0 0 45px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.17) 50%, transparent 50%);
 }
-
 .seebox p {
     margin-bottom: 30px;
 }
-
-.diagpanel .fullpanel {
-    background-image: url(img/diagnosis-1.jpg);
-    background-position: top;
+.diagpanel img {
+    width: 100%;
 }
-
 .wherepanel {
     padding-bottom: 50px;
 }
-
 .wherepanel .headbord, .beyondpanel .headbord {
     border-color: #ff7861;
     display: inline-block;
 }
-
 .wherebox {
     padding-left: 0;
     padding-right: 30px;
 }
-
 .wherebox h2 {
     min-height: 60px;
 }
-
 .wherepanel hr, .aboutintro hr {
     border-top: solid 2px #ff7861;
     margin-top: 75px;
     margin-bottom: 75px;
-    width: 20%;
+    width: 138px;
     margin-left: 0;
 }
-
 .bigwhere {
     padding-bottom: 50px;
 }
-
 .bigwhere:nth-child(2n+1) {
     clear: both;
 }
-
 .trainbox {
     padding-left: 0;
     padding-right: 45px;
 }
-
 .buttype1 {
     border: 2px solid #fff;
     padding: 15px 25px;
     text-decoration: none !important;
 }
-
 .trainpanel .buttype1 {
     display: inline-block;
     margin-top: 75px;
     color: #fff;
 }
-
 .buttype1:hover {
     background: #fff;
     color: #ff7861;
 }
-
-.diagpanel2 .fullpanel {
+/*.diagpanel2 .fullpanel {
     background-image: url(img/diagnosis-2.jpg);
     background-position: top;
-}
-
+}*/
 .beyondpanel .wherebox h3 {
     margin-bottom: 10px;
 }
-
+.twoimgpanel img {
+    width: 100%;
+}
 .twoimgpanel .panel1 {
     padding-left: 0;
 }
-
 .twoimgpanel .panel1 .botcaps {
     right: 45px;
 }
-
-.twoimgpanel .panel1 .fullpanel {
+/*.twoimgpanel .panel1 .fullpanel {
     background-image: url(img/rehearsal.jpg);
     background-position: top;
-}
-
+}*/
 .twoimgpanel .panel2 {
     padding-right: 0;
+    cursor: pointer;
 }
-
-.twoimgpanel .panel2 .fullpanel {
+/*.twoimgpanel .panel2 .fullpanel {
     background-image: url(img/harmonic.jpg);
     background-position: center;
+}*/
+.twoimgpanel .panel2 {
+    overflow: hidden;
 }
-
 .twoimgpanel a {
     color: inherit;
 }
-
 .videotext {
     text-align: center;
-    margin-top: 30vh;
 }
-
 .videotext img, .videotext p {
     display: inline-block;
 }
-
 .videotext img {
     width: 60px;
     margin-right: 20px;
 }
-
 .touchpanel.justimgbox .fullpanel, .aboutintro.justimgbox .fullpanel {
     min-height: initial;
 }
-
 .touchpanel {
     padding-top: 0;
 }
-
 .touchpanel .socialpanel {
     margin-bottom: 50px;
 }
-
 .touchpanel p {
     margin-bottom: 30px;
 }
-
 .touchpanel p a {
     color: inherit;
     text-decoration: none !important;
     border-bottom: 1px solid #fff;
 }
-
 .touchpanel p a:hover {
     color: #ff7861;
     border-bottom: 1px solid #ff7861;
 }
-
 .aboutintro {
     padding-bottom: 0;
 }
-
+.aboutintro.justimgbox .fullpanel {
+    padding: 6vw 0 0 6vw;
+}
+.aboutintro.justimgbox .imgcontainer {
+    border-right: 30px #fff solid;
+}
 .aboutintro .container div, .aboutdesc .singentry div.rightpan {
     padding-left: 40px;
     padding-right: 40px;
 }
-
 .aboutintro p {
-    margin-bottom: 30px;
-    line-height: 34px;
+    margin-bottom: 45px;
+    line-height: 32px;
 }
-
 .aboutintro hr {
     margin: 100px auto 0;
 }
-
 .aboutintro .container.padtb100 {
     padding-bottom: 0;
 }
-
 .aboutdesc .singentry {
     padding-bottom: 50px;
 }
-
-.aboutdesc p a {
-    color: inherit;
-    border-bottom: 1px solid #333;
-    text-decoration: none !important;
+.singentry h4.pinktext {
+    text-transform: uppercase;
 }
-
-.aboutdesc p a:hover {
+.aboutdesc a p {
+    color: #333;
+    text-decoration: underline !important;
+}
+.aboutdesc a p:hover {
     color: #ff7861;
-    border-bottom: 1px solid #ff7861;
 }
-
+/*.aboutdesc p i {
+    font-size: 13px;
+    line-height: 18px;
+}*/
 #aboutpage .touchpanel p {
     margin-bottom: 15px;
+}
+
+
+/* Modal Feature */
+body.modal-open {
+    padding-right: initial !important;
+}
+.modal-body {
+    padding: 0;
+}
+.modal-backdrop {
+    background-color: rgba(255, 120, 97,0.4);
+}
+.modal-content {
+    background: #000;
+    box-shadow: none;
+}
+.modal-content button {
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    opacity: 1;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    -webkit-appearance: none !important;
+    outline: none !important;
+}
+.modal-content button img {
+    height: 100%;
+    width: 100%;
+}
+.modal-content button:hover {
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .modal-dialog {
+        width: calc((1170px) *0.8);
+        margin: 30px auto;
+    }
+    .modal {
+      text-align: center;
+      padding: 0!important;
+    }
+    .modal:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
 }
 
 @media (min-width: 1150px) and (max-width: 1336px) {
@@ -548,9 +596,8 @@ hr.pinkhr {
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-    .botcaps {
-        right: 30px;
-        bottom: 20px;
+    .seebox div {
+        padding: 37.5px 0 0 37.5px;
     }
     .touchpanel .col-md-8 {
         width: 100%;
@@ -566,6 +613,9 @@ hr.pinkhr {
         height: 89%;
         margin-left: -71%;
         transform: rotate(-49deg) scale(1.65);
+    }
+    .seebox div {
+        padding: 37.5px 0 0 37.5px;
     }
     .seebox p {
         margin-bottom: 25px;
@@ -602,6 +652,9 @@ hr.pinkhr {
         margin-left: -70%;
         transform: rotate(-50deg) scale(1.5);
     }
+    .seebox div {
+        padding: 27.5px 0 0 27.5px;
+    }
     .seebox p {
         margin-bottom: 25px;
     }
@@ -624,16 +677,23 @@ hr.pinkhr {
     }
     .trainpanel .buttype1, .touchpanel p {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
-    .videotext {
-        margin-top: 15vh;
-    }
+    /*.videotext {
+        margin-top: -32vh !important;
+        padding-bottom: 25vh;
+    }*/
     .beyondpanel {
         padding-top: 50px;
         padding-bottom: 50px;
     }
     .twoimgpanel .panel2 {
         padding-left: 0;
+        height: initial !important;
+        overflow: initial;
+    }
+    .twoimgpanel .panel2 img {
+        margin-top: initial !important;
     }
     .aboutintro .container div, .aboutdesc .singentry div.rightpan {
         padding-left: 25px;
@@ -655,12 +715,17 @@ hr.pinkhr {
         padding: 0;
         text-align: center;
     }
+    .toppanel h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+    }
     .toppanel .fullpanel {
         min-height: initial;
-        padding-top: 31vh;
+        padding-top: 28vh;
         background-image: url(img/xs/toppanel.jpg);
-        background-position: top center;
-        padding-bottom: 50px;
+        background-position: top left;
+        padding-bottom: 30px;
     }
     .toppanel h1 {
         text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
@@ -683,10 +748,12 @@ hr.pinkhr {
         display: none;
     }
     .seebox div {
+        background: none;
         padding: 0 15px 30px;
     }
     .headbord {
         margin-bottom: 40px;
+        border-bottom-width: 3px;
     }
     .seepanel, .wherepanel {
         padding-bottom: 20px;
@@ -706,8 +773,11 @@ hr.pinkhr {
         padding-top: 50px;
         text-align: center;
     }
+    .wherepanel .container {
+        max-width: 375px;
+    }
     .wherepanel hr, .aboutintro hr {
-        width: 60%;
+        width: 138px;
         margin: 0 auto 50px;
     }
     .wherebox {
@@ -734,10 +804,17 @@ hr.pinkhr {
         padding-left: 30px;
         padding-right: 30px;
     }
+    /*.trainpanel .container .col-md-12.text-center {
+        text-align: left !important;
+        padding-left: 30px;
+        padding-right: 30px;
+    }*/
     .trainpanel .buttype1 {
         margin-top: 30px;
         letter-spacing: 1.1px;
         font-size: 12px;
+        padding: 12px 25px;
+        font-weight: 600;
     }
     .trainbox .p1 {
         font-size: 12px;
@@ -748,10 +825,15 @@ hr.pinkhr {
     }
     .twoimgpanel .panel2 {
         padding-left: 0;
+        height: initial !Important;
+        overflow: initial !Important;
     }
-    .videotext {
-        margin-top: 12.5vh;
+    .twoimgpanel img {
+        margin-top: 0 !important;
     }
+    /*.videotext {
+        margin-top: -27vh !important;
+    }*/
     .videotext img {
         width: 40px;
     }
@@ -775,6 +857,9 @@ hr.pinkhr {
     .aboutintro.justimgbox {
         text-align: center;
     }
+    .aboutintro.justimgbox .imgcontainer {
+        border-right: none;
+    }
     .aboutintro h1 {
         font-size: 20px;
         line-height: 24px;
@@ -787,9 +872,15 @@ hr.pinkhr {
     .aboutintro h3, .aboutdesc .singentry p {
         margin-bottom: 0;
     }
-    .aboutintro .fullpanel {
+    .aboutintro.justimgbox .pinkbg {
+        background: none;
+    }
+    .aboutintro.justimgbox .fullpanel {
         margin-top: -58px;
         padding: 20px;
+        background: #ff7861;
+        width: 75%;
+        margin-left: 12.5%;
     }
     .aboutintro .container.padtb100, .aboutdesc {
         padding-top: 50px;
@@ -798,8 +889,12 @@ hr.pinkhr {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .aboutintro p, .aboutdesc .singentry h4 {
-        margin-bottom: 15px;
+    .aboutintro p {
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+    .aboutintro .socialpanel {
+        padding-top: 10px;
     }
     #scalexs {
         display: none;
@@ -817,5 +912,17 @@ hr.pinkhr {
     .aboutdesc .singentry div.rightpan {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .aboutdesc .singentry h4 {
+        margin-bottom: 15px;
+    }
+    /*.aboutdesc p i {
+        font-size: 12px;
+    }*/
+}
+
+@media (min-width: 534px) and (max-width: 767px) {
+    .toppanel .fullpanel {
+        background-position-y: -10vh;
     }
 }
