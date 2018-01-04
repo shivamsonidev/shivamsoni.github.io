@@ -364,7 +364,7 @@ hr.pinkhr {
 }*/
 .seebox div {
     padding: 45px 0 0 45px;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.17) 50%, transparent 50%);
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.17) 50%, transparent 50%);
 }
 .seebox p {
     margin-bottom: 30px;
@@ -605,6 +605,9 @@ body.modal-open {
     .wherebox h2 {
         min-height: 90px;
     }
+    .container {
+        width: 880px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -635,6 +638,16 @@ body.modal-open {
     }
     .touchpanel p {
         margin-bottom: 20px;
+    }
+    .aboutintro h1 {
+        font-size: 35px;
+        line-height: 39px;
+        margin-bottom: 17.5px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17.5px;
     }
 }
 
@@ -695,9 +708,26 @@ body.modal-open {
     .twoimgpanel .panel2 img {
         margin-top: initial !important;
     }
+    .aboutintro.justimgbox .fullpanel {
+        padding: 3vw 0 0 3vw;
+    }
     .aboutintro .container div, .aboutdesc .singentry div.rightpan {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    .aboutintro h1, .aboutintro h3 {
+        margin-bottom: 15px
+    }
+    .aboutintro.justimgbox .imgcontainer {
+        border-right: 15px #fff solid;
+    }
+    .aboutintro h1 {
+        font-size: 35px;
+        line-height: 39px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
     }
     .aboutintro p {
         line-height: 26px;
@@ -723,8 +753,6 @@ body.modal-open {
     .toppanel .fullpanel {
         min-height: initial;
         padding-top: 28vh;
-        background-image: url(img/xs/toppanel.jpg);
-        background-position: top left;
         padding-bottom: 30px;
     }
     .toppanel h1 {
@@ -804,11 +832,11 @@ body.modal-open {
         padding-left: 30px;
         padding-right: 30px;
     }
-    /*.trainpanel .container .col-md-12.text-center {
+    .trainpanel .container .col-md-12.text-center {
         text-align: left !important;
         padding-left: 30px;
         padding-right: 30px;
-    }*/
+    }
     .trainpanel .buttype1 {
         margin-top: 30px;
         letter-spacing: 1.1px;
@@ -921,8 +949,9 @@ body.modal-open {
     }*/
 }
 
-@media (min-width: 534px) and (max-width: 767px) {
+@media (max-width: 534px) {    
     .toppanel .fullpanel {
-        background-position-y: -10vh;
+        background-image: url(img/xs/toppanel.jpg);
+        background-position: top left;
     }
 }
