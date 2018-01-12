@@ -56,7 +56,7 @@ a:hover {
 h1 {
     font-size: 65px;
     line-height: 67px;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
 }
 
 h2 {
@@ -295,7 +295,7 @@ hr.pinkhr {
 
 /* Real code starts here */
 
-#landpage .toppanel .textpanel .col-md-6 {
+/*#landpage .toppanel .textpanel .col-md-6 {
     opacity: 0;
 }
 .textup {
@@ -304,7 +304,7 @@ hr.pinkhr {
 @keyframes txtfadein {
     from { opacity:0; transform: translateY(20px);}
     to { opacity:1; transform: none; }
-}
+}*/
 .justimgbox {
     padding: 30px;
 }
@@ -341,9 +341,6 @@ hr.pinkhr {
 .headbord {
     border-bottom: solid 4px #ffffff;
     margin-bottom: 60px;
-}
-.seepanel {
-    padding-bottom: 50px;
 }
 .seepanel h3 {
     display: inline-block;
@@ -500,7 +497,7 @@ hr.pinkhr {
     line-height: 32px;
 }
 .aboutintro hr {
-    margin: 100px auto 0;
+    margin: 55px auto 0;
 }
 .aboutintro .container.padtb100 {
     padding-bottom: 0;
@@ -597,7 +594,7 @@ body.modal-open {
 
 @media (min-width: 1025px) and (max-width: 1200px) {
     .seebox div {
-        padding: 37.5px 0 0 37.5px;
+        min-height: 386px;
     }
     .touchpanel .col-md-8 {
         width: 100%;
@@ -607,6 +604,16 @@ body.modal-open {
     }
     .container {
         width: 880px;
+    }
+    .aboutintro h1 {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 17.5px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17.5px;
     }
 }
 
@@ -709,7 +716,7 @@ body.modal-open {
         margin-top: initial !important;
     }
     .aboutintro.justimgbox .fullpanel {
-        padding: 3vw 0 0 3vw;
+        padding: 2vw 0 0 5vw;
     }
     .aboutintro .container div, .aboutdesc .singentry div.rightpan {
         padding-left: 25px;
@@ -745,7 +752,7 @@ body.modal-open {
         padding: 0;
         text-align: center;
     }
-    .toppanel h4 {
+    .toppanel h3 {
         margin-top: 0;
         margin-bottom: 0;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
@@ -801,7 +808,7 @@ body.modal-open {
         padding-top: 50px;
         text-align: center;
     }
-    .wherepanel .container {
+    .wherepanel .container, .beyondpanel .container, .aboutintro .container, .aboutdesc .container {
         max-width: 375px;
     }
     .wherepanel hr, .aboutintro hr {
@@ -809,7 +816,7 @@ body.modal-open {
         margin: 0 auto 50px;
     }
     .wherebox {
-        padding: 0 0 30px;
+        padding: 0 15px 30px;
     }
     .wherebox h2 {
         min-height: initial;
@@ -862,6 +869,26 @@ body.modal-open {
     /*.videotext {
         margin-top: -27vh !important;
     }*/
+    .modal-dialog {
+        width: 90%;
+        margin: 24vh auto 0;
+    }
+    .modal-dialog #videoo {
+        max-height: 50vh !important;
+    }
+    .modal-content button {
+        top: 5px;
+        left: 0;
+        right: 0;
+        margin: -21vh auto;
+    }
+    .modal-backdrop {
+        background: #ff7861;
+        transition: opacity .5s linear;
+    }
+    .modal-backdrop.in {
+        opacity: 1;
+    }
     .videotext img {
         width: 40px;
     }
