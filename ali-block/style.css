@@ -322,9 +322,9 @@ hr.pinkhr {
     background-image: url(img/toppanel.jpg);
     background-position: center;
 }
-.toppanel .socialpanel {
+/*.toppanel .socialpanel {
     padding-top: 20px;
-}
+}*/
 .socialpanel img {
     width: 50px;
     margin-right: 20px;
@@ -584,6 +584,16 @@ body.modal-open {
     .twoimgpanel .panel1 .botcaps p {
         padding-left: 100px;
     }
+    .aboutintro h1 {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 17.5px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17.5px;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1150px) {
@@ -604,6 +614,10 @@ body.modal-open {
     }
     .container {
         width: 880px;
+    }
+    .modal-dialog {
+        width: 80%;
+        margin: 20vh auto;
     }
     .aboutintro h1 {
         font-size: 45px;
@@ -645,6 +659,9 @@ body.modal-open {
     }
     .touchpanel p {
         margin-bottom: 20px;
+    }
+    .modal-dialog {
+        margin: 15vh auto;
     }
     .aboutintro h1 {
         font-size: 35px;
@@ -715,6 +732,9 @@ body.modal-open {
     .twoimgpanel .panel2 img {
         margin-top: initial !important;
     }
+    .modal-dialog {
+        margin: 25vh auto;
+    }
     .aboutintro.justimgbox .fullpanel {
         padding: 2vw 0 0 5vw;
     }
@@ -766,8 +786,8 @@ body.modal-open {
         text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
     }
     .toppanel h3 {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 20px;
+        line-height: 24px;
         margin-bottom: 15px;
     }
     .socialpanel img {
@@ -955,7 +975,7 @@ body.modal-open {
         display: none;
     }
     .readmore {
-        padding-top: 30px;
+        padding-top: 60px;
     }
     .readmore.dissed {
         padding-top: 0;
