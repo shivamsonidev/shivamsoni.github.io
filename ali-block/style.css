@@ -532,7 +532,9 @@ body.modal-open {
     padding: 0;
 }
 .modal-backdrop {
-    background-color: rgba(255, 120, 97,0.4);
+    /*background-color: rgba(255, 120, 97,0.4);*/
+    background-color: #ff7861;
+    opacity: 1 !important;
 }
 .modal-content {
     background: #000;
@@ -733,7 +735,7 @@ body.modal-open {
         margin-top: initial !important;
     }
     .modal-dialog {
-        margin: 25vh auto;
+        margin: calc( (100vh - 540px)/2 ) auto;
     }
     .aboutintro.justimgbox .fullpanel {
         padding: 2vw 0 0 5vw;
@@ -781,6 +783,8 @@ body.modal-open {
         min-height: initial;
         padding-top: 28vh;
         padding-bottom: 30px;
+        /*padding-top: 11vh;
+        padding-bottom: 25vh;*/
     }
     .toppanel h1 {
         text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
@@ -788,7 +792,8 @@ body.modal-open {
     .toppanel h3 {
         font-size: 20px;
         line-height: 24px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
     .socialpanel img {
         width: 40px;
@@ -968,6 +973,9 @@ body.modal-open {
         margin-bottom: 30px;
         line-height: 25px;
     }
+    .aboutintro  #scalexs p:nth-last-child(1) {
+        margin-bottom: 0;
+    }
     .aboutintro .socialpanel {
         padding-top: 10px;
     }
@@ -975,10 +983,12 @@ body.modal-open {
         display: none;
     }
     .readmore {
-        padding-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .readmore.dissed {
         padding-top: 0;
+        padding-bottom: 0;
     }
     .readmore .buttype1, .readmore .buttype1:hover {
         color: #ff7861;
