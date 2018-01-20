@@ -533,8 +533,12 @@ body.modal-open {
 }
 .modal-backdrop {
     /*background-color: rgba(255, 120, 97,0.4);*/
-    background-color: #ff7861;
+    animation: modalfader .5s ease-in forwards;
     opacity: 1 !important;
+}
+@keyframes modalfader {
+    from {background: none;}
+    to {background-color: #ff7861;}
 }
 .modal-content {
     background: #000;
@@ -557,6 +561,26 @@ body.modal-open {
 }
 .modal-content button:hover {
     opacity: 1;
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .container {
+        width: 970px;
+    }
+    .seebox {
+        width: 41.66666667%;
+    }
+    .seebox.col-sm-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .aboutdesc .singentry {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .aboutdesc .singentry div.rightpan {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -772,7 +796,7 @@ body.modal-open {
     }
     .toppanel {
         padding: 0;
-        text-align: center;
+        /*text-align: center;*/
     }
     .toppanel h3 {
         margin-top: 0;
@@ -781,24 +805,25 @@ body.modal-open {
     }
     .toppanel .fullpanel {
         min-height: initial;
-        padding-top: 28vh;
-        padding-bottom: 30px;
-        /*padding-top: 11vh;
-        padding-bottom: 25vh;*/
+        /*padding-top: 28vh;
+        padding-bottom: 30px;*/
+        padding: 19vh 30px 22vh;
     }
     .toppanel h1 {
         text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
+        font-size: 38px;
+        line-height: 40px;
     }
     .toppanel h3 {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 17px;
+        line-height: 20px;
         margin-bottom: 20px;
         margin-top: 20px;
     }
     .socialpanel img {
-        width: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 35px;
+        margin-left: 0;
+        margin-right: 15px;
     }
     .seepanel {
         text-align: center;
@@ -957,7 +982,7 @@ body.modal-open {
     }
     .aboutintro.justimgbox .fullpanel {
         margin-top: -58px;
-        padding: 20px;
+        padding: 20px !important;
         background: #ff7861;
         width: 75%;
         margin-left: 12.5%;
@@ -983,7 +1008,7 @@ body.modal-open {
         display: none;
     }
     .readmore {
-        padding-top: 30px;
+        padding-top: 10px;
         padding-bottom: 30px;
     }
     .readmore.dissed {
