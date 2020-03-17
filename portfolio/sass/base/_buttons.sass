@@ -1,0 +1,40 @@
+.button
+    display: inline-block
+    cursor: pointer
+    text-decoration: none
+    text-align: center
+    outline: none !important
+    position: relative
+    .button-content
+        display: block
+        z-index: 5
+        border: 3px solid #222
+        background: #FFF
+        position: relative
+        color: #222
+        padding: 8px 30px
+        transition: all 0.25s ease-in-out
+
+.button::after
+    content: ''
+    background: #FFF
+    height: 105%
+    width: 100%
+    z-index: 2
+    border: 3px solid #222
+    -webkit-transform: translate(-10px, 10px)
+    transform: translate(-10px, 10px)
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    transition: all 0.25s ease-in-out
+    
+.button:hover, .button:focus
+    .button-content
+        background: #222
+        color: #FFF
+
+.button:hover::after, .button:focus::after
+    -webkit-transform: translate(0px, 0px)
+    transform: translate(0px, 0px)
