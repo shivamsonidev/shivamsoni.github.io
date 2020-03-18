@@ -468,12 +468,12 @@ p, .p1 {
     line-height: 30px;
   }
   .p2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .p3 {
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 12px;
+    line-height: 20px;
   }
   .p4 {
     font-size: 11px;
@@ -710,7 +710,7 @@ p, .p1 {
     position: relative;
     padding: 2rem;
   }
-  .landing-page-work .work-projects .work-card .card-content .copy {
+  .landing-page-work .work-projects .work-card .card-content .title, .landing-page-work .work-projects .work-card .card-content .copy {
     margin-bottom: 0;
   }
   .landing-page-work .work-projects .work-card .card-content .view-button {
@@ -718,6 +718,12 @@ p, .p1 {
   }
   .landing-contact {
     text-align: center;
+  }
+  .landing-contact .email-id {
+    font-size: 18px;
+  }
+  .landing-contact .email-id a span {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
