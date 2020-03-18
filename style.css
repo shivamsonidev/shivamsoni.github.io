@@ -281,19 +281,16 @@ body {
 h1, .h1 {
   font-size: 48px;
   line-height: 60px;
-  font-weight: 300;
 }
 
 h2, .h2 {
-  font-size: 36px;
-  line-height: 48px;
-  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
 }
 
 h3, .h3 {
   font-size: 24px;
   line-height: 32px;
-  font-weight: 300;
 }
 
 p, .p1 {
@@ -452,24 +449,24 @@ p, .p1 {
 
 @media (max-width: 767px) {
   h1, .h1 {
-    font-size: 48px;
-    line-height: 60px;
-  }
-  h2, .h2 {
     font-size: 32px;
     line-height: 42px;
+  }
+  h2, .h2 {
+    font-size: 24px;
+    line-height: 28px;
   }
   h3, .h3 {
     font-size: 20px;
     line-height: 30px;
   }
   .p1 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 22px;
   }
   .p2 {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 23px;
   }
   .p3 {
     font-size: 12px;
@@ -564,14 +561,14 @@ p, .p1 {
 }
 
 .landing-page-banner .banner-image {
-  padding: calc((80vh - 387px)/2) 0;
+  padding: calc((100vh - 310px)/2) 0;
   background: radial-gradient(rgba(0, 0, 0, 0.1) 15%, transparent 16%) 0 0, radial-gradient(rgba(0, 0, 0, 0.1) 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
   background-size: 16px 16px;
   background-color: #F0F0F0;
 }
 
 .landing-page-banner .banner-image .logo-image-holder img {
-  width: 394px;
+  width: 240px;
 }
 
 .landing-page-banner .banner-image .banner-body-copy {
@@ -648,11 +645,11 @@ p, .p1 {
 @media (min-width: 992px) {
   .landing-page-banner .banner-image .textual::before, .landing-page-banner .banner-image .textual::after {
     content: '';
-    height: 390px;
-    width: 390px;
+    height: 330px;
+    width: 330px;
     position: absolute;
     top: 0;
-    left: -80%;
+    left: -80% !important;
     border-radius: 100%;
   }
   .landing-page-banner .banner-image .textual::before {
@@ -713,6 +710,9 @@ p, .p1 {
   }
   .landing-page-work .work-projects .work-card .card-content .block-button {
     display: none;
+  }
+  .landing-page-work .work-projects .work-containers:nth-last-child(1) .work-card {
+    margin-bottom: initial;
   }
   .landing-contact {
     text-align: center;
