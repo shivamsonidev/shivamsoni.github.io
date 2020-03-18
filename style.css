@@ -516,6 +516,7 @@ p, .p1 {
   text-align: center;
   outline: none !important;
   position: relative;
+  margin-left: 10px;
 }
 
 .button .button-content {
@@ -550,11 +551,16 @@ p, .p1 {
 .button:hover .button-content, .button:focus .button-content {
   background: #222;
   color: #FFF;
+  -webkit-transform: translate(-10px, 10px);
+  transform: translate(-10px, 10px);
 }
 
-.button:hover::after, .button:focus::after {
-  -webkit-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
+.block-button {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  margin-top: 1rem;
+  background: #FFF;
+  color: #222222;
 }
 
 .landing-page-banner .banner-image {
@@ -613,14 +619,6 @@ p, .p1 {
   transition: all 0.25s ease-in-out;
 }
 
-.landing-page-work .work-projects .work-card .card-content .view-button {
-  display: inline-block;
-  padding: 1.2rem 2.4rem;
-  margin-top: 1rem;
-  background: #FFF;
-  color: #222222;
-}
-
 .landing-page-work .work-projects .work-card:hover .card-content {
   opacity: 1;
 }
@@ -670,7 +668,7 @@ p, .p1 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .landing-page-banner .banner-image .textual::before, .landing-page-banner .banner-image .textual::after {
     left: -100%;
   }
@@ -713,7 +711,7 @@ p, .p1 {
   .landing-page-work .work-projects .work-card .card-content .title, .landing-page-work .work-projects .work-card .card-content .copy {
     margin-bottom: 0;
   }
-  .landing-page-work .work-projects .work-card .card-content .view-button {
+  .landing-page-work .work-projects .work-card .card-content .block-button {
     display: none;
   }
   .landing-contact {
