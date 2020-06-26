@@ -26,7 +26,7 @@
                 position: relative
                 font-weight: 700
                 letter-spacing: 1px
-            a:hover
+            a:hover, a:focus
                 color: $purple
     .logo
         background: #FFF
@@ -62,22 +62,10 @@
                     transition: all 0.25s ease-in-out
                     color: #FFF
                     padding: 10px 30px
-                    border-radius: 30px
                     overflow: hidden
                     span
                         z-index: 3
                         position: relative
-                a:after
-                    content: ''
-                    position: absolute
-                    height: 111%
-                    width: 20%
-                    background: rgba(255,255,255,0.4)
-                    right: -9px
-                    top: 0
-                    transform: rotate(18deg)
-                    z-index: 3
-                    transition: all 0.25s ease-in-out
                 a:before
                     content: ''
                     position: absolute
@@ -91,8 +79,6 @@
                     transition: all 0.25s ease-in-out
                 a:hover:before
                     transform: translateY(0)
-                a:hover:after
-                    background: rgba(255,255,255,0.1)
             li
                 position: relative
                 .sub-menu
