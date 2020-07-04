@@ -1,14 +1,18 @@
 .headstart
-    box-shadow: 0 0 20px rgba(0,0,0,0.1)
     position: fixed
     top: initial
     z-index: 1000
     width: 100%
+    transition: box-shadow 0.5s ease-in-out, background 0.5s ease-in-out
+
+.headstart.scrolled
+    box-shadow: 0 0 20px rgba(0,0,0,0.1)
     background: #FFF
+    .header
+        background: #FFF
 
 .header
     display: inline-block
-    background: #FFF
     list-style: none
     margin: 0 auto !important
     font-size: 21px
@@ -27,7 +31,7 @@
                 font-weight: 700
                 letter-spacing: 1px
             a:hover, a:focus
-                color: $purple
+                color: $blue
     .logo
         background: #FFF
         display: block
@@ -42,7 +46,7 @@
             li.current-menu-item
                 a:after
                     content: ''
-                    background: $purple
+                    background: $blue
                     height: 4px
                     width: 30px
                     position: absolute
@@ -58,7 +62,7 @@
                 float: right
                 top: 10px
                 a
-                    background: $purple
+                    background: $blue
                     transition: all 0.25s ease-in-out
                     color: #FFF
                     padding: 10px 30px
@@ -93,13 +97,13 @@
                     float: right
                     right: 0
                     li
-                        border-bottom: 1px solid $purple
+                        border-bottom: 1px solid $blue
                         display: block
                     li.current-menu-item
                         a:after
                             display: none
                         a
-                            color: $purple
+                            color: $blue
                             font-weight: 600
                     li:nth-last-child(1)
                         border-bottom: none
@@ -163,8 +167,22 @@
         .logo 
             img
                 width: 135px
+                transition: width 0.5s ease-in-out
+            ul
+                li
+                    transition: padding 0.15s ease-in-out
         .menulist
             float: right
+    .headstart.scrolled
+        .header
+            .logo 
+                img
+                    width: 110px
+            ul
+                li
+                    padding: 20px 0 20px 30px
+                li.button
+                    padding: 2px 0 0 25px
     
 @media (max-width: 767px)
     .headstart .header
@@ -187,9 +205,17 @@
                 font-size: 15px
                 line-height: 21px
                 border-bottom: 1px solid rgba(0,0,0,0.1)
+                &:nth-child(1), &:nth-child(2)
+                    border-left: 1px solid rgba(0,0,0,0.1)
+                    width: 49%
+                    display: inline-block
+                &:nth-child(2)
+                    border-left: 1px solid rgba(0,0,0,0.1)
+                &:nth-child(3)
+                    margin-top: -10px
             li.button
                 border: 0
-                padding: 5px 30px 30px
+                padding: 0
                 a
                     padding: 15px
             li.menu-item-has-children:before
@@ -212,7 +238,7 @@
                     min-width: 100%
                     float: none
                     box-shadow: none
-                    border-left: 1px solid $purple
+                    border-left: 1px solid $blue
                     margin: 10px 0
                     padding: 0
                     li

@@ -18,16 +18,37 @@
             .textual::after
                 border: 10px solid #222
                 box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    .landing-page-work
+        .work-projects
+            .work-containers
+                &:nth-child(odd)
+                    padding-left: 0
+                    padding-right: 20px
+                &:nth-child(even)
+                    padding-left: 20px
+                    padding-right: 0
 
 // @media (min-width: 1025px) and (max-width: 1280px)
 
 // @media (min-width: 992px) and (max-width: 1024px)
 
-@media (min-width: 768px)
-    .landing-page-banner
-        .banner-image
-            .textual::before, .textual::after
-                left: -100%
+@media (min-width: 768px) and (max-width: 991px)
+    .landing-page-clients
+        background-color: $black
+        padding-bottom: 30px
+        margin-top: 0
+        .padt150
+            padding-top: 50px
+        .client-container 
+            .container:before
+                display: none
+    .landing-page-work
+        padding-top: 30px
+    .landing-page-about
+        .banner-container:before
+            background-position: 80% center
+    .landing-contact
+        padding: 75px 0
 
 @media (max-width: 767px)
     .landing-page-banner
@@ -48,27 +69,36 @@
                 .button
                     font-size: 17px
                     width: initial
-
+    .landing-page-clients
+        margin-top: -125px
+        .client-container 
+            .container:before
+                left: 0
+    .landing-page-about 
+        padding-bottom: 0
+        .banner-container
+            padding-top: 250px
+            padding-bottom: 0
+            &:before
+                background-position: right center
+                height: 250px
+                box-shadow: none
+                background-size: 200%
+            .pad5030
+                padding: 30px 20px
+                margin-bottom: -30px
+                z-index: 2
     .landing-page-work
-        .work-headline
-            text-align: center
+        padding-bottom: 0
         .work-projects
-            .work-card
-                .card-content
-                    opacity: 1
-                    background: none
-                    color: $black
-                    position: relative
-                    padding: 2rem
-                    .title, .copy
-                        margin-bottom: 0
-                    .block-button
-                        display: none
-            .work-containers:nth-last-child(1)
-                .work-card
-                    margin-bottom: initial
+            .work-containers
+                padding-left: 0
+                padding-right: 0
+                &:nth-last-child(1)
+                    .work-card
+                        margin-bottom: initial
     .landing-contact
-        text-align: center
+        padding: 60px 0
         .email-id
             font-size: 18px
             a
