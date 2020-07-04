@@ -1,0 +1,337 @@
+.headstart
+    position: fixed
+    top: initial
+    z-index: 1000
+    width: 100%
+    transition: box-shadow 0.5s ease-in-out, background 0.5s ease-in-out
+
+.headstart.scrolled
+    box-shadow: 0 0 20px rgba(0,0,0,0.1)
+    background: #FFF
+    .header
+        background: #FFF
+
+.header
+    display: inline-block
+    list-style: none
+    margin: 0 auto !important
+    font-size: 21px
+    z-index: 2
+    top: 0
+    height: initial !important
+    display: block
+    padding: 0 15px
+    ul
+        li
+            display: inline-block
+            padding: 27.5px 0 27.5px 30px
+            a
+                display: block
+                position: relative
+                font-weight: 700
+                letter-spacing: 1px
+            a:hover, a:focus
+                color: $blue
+    .logo
+        background: #FFF
+        display: block
+        img
+            display: block
+            float: left
+            padding: 10px 0
+            width: 150px
+    .menulist
+        margin-left: 100px
+        ul
+            li.current-menu-item
+                a:after
+                    content: ''
+                    background: $blue
+                    height: 4px
+                    width: 30px
+                    position: absolute
+                    left: 0
+                    right: 0
+                    margin: 0 auto
+                    bottom: -8px
+            li.current-menu-item.avoid
+                a:after
+                    display: none
+            li.button
+                padding: 7px 0 0 25px
+                float: right
+                top: 10px
+                a
+                    background: $blue
+                    transition: all 0.25s ease-in-out
+                    color: #FFF
+                    padding: 10px 30px
+                    overflow: hidden
+                    span
+                        z-index: 3
+                        position: relative
+                a:before
+                    content: ''
+                    position: absolute
+                    height: 100%
+                    width: 100%
+                    background: $black
+                    left: 0
+                    top: 0
+                    z-index: 2
+                    transform: translateY(-80px)
+                    transition: all 0.25s ease-in-out
+                a:hover:before
+                    transform: translateY(0)
+            li
+                position: relative
+                .sub-menu
+                    display: none
+                    opacity: 0
+                    position: absolute
+                    background: #FFF
+                    padding: 10px 20px
+                    min-width: 400px
+                    margin-top: 15px
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+                    float: right
+                    right: 0
+                    li
+                        border-bottom: 1px solid $blue
+                        display: block
+                    li.current-menu-item
+                        a:after
+                            display: none
+                        a
+                            color: $blue
+                            font-weight: 600
+                    li:nth-last-child(1)
+                        border-bottom: none
+            li.menu-item-has-children:hover
+                .sub-menu
+                    display: block
+                    animation: fadingin 0.5s ease-in-out forwards
+            li.menu-item-has-children:after
+                content: "\e259"
+                font-size: 10px
+                font-family: 'Glyphicons Halflings'
+                position: absolute
+                right: 14px
+                top: 14px
+                transform: rotate(0deg)
+                transition: all 0.25s ease-in-out
+            li.menu-item-has-children:hover:after
+                transform: rotate(180deg)
+            li.menu-item-has-children:before
+                content: ""
+                background: #cccccc
+                height: 15px
+                width: 15px
+                position: absolute
+                right: 11.5px
+                top: 19.5px
+                border-radius: 50%
+        
+.header.container-fluid
+    width: 100%
+
+@keyframes fadingin
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@media (min-width: 768px) and (max-width: 991px)
+    .header 
+        .menulist 
+            ul 
+                li
+                    padding: 20px 15px 20px 0
+                li.button 
+                    a
+                        padding: 10px 20px
+                li.current-menu-item 
+                    a:after
+                        width: 26px
+
+@media (min-width: 768px)
+    .header.withbg
+        background: #FFF
+        box-shadow: 0 0 12px rgba(0,0,0,0.1)
+        height: initial
+    .menulist
+        display: block !important
+        ul
+            padding-left: 30px
+    .header
+        .logo 
+            img
+                width: 135px
+                transition: width 0.5s ease-in-out
+            ul
+                li
+                    transition: padding 0.15s ease-in-out
+        .menulist
+            float: right
+    .headstart.scrolled
+        .header
+            .logo 
+                img
+                    width: 110px
+            ul
+                li
+                    padding: 20px 0 20px 30px
+                li.button
+                    padding: 2px 0 0 25px
+    
+@media (max-width: 767px)
+    .headstart .header
+        padding: 10px 15px
+        width: 100%
+        box-shadow: none
+        ul
+            float: initial
+            display: block
+            position: relative
+            padding: 0
+            li
+                display: block
+                float: initial
+                padding: 0
+                width: 100%
+                padding: 17px 15px
+                text-align: center
+                letter-spacing: 1px
+                font-size: 15px
+                line-height: 21px
+                border-bottom: 1px solid rgba(0,0,0,0.1)
+                &:nth-child(1), &:nth-child(2)
+                    border-left: 1px solid rgba(0,0,0,0.1)
+                    width: 49%
+                    display: inline-block
+                &:nth-child(2)
+                    border-left: 1px solid rgba(0,0,0,0.1)
+                &:nth-child(3)
+                    margin-top: -10px
+            li.button
+                border: 0
+                padding: 0
+                a
+                    padding: 15px
+            li.menu-item-has-children:before
+                right: 0px
+                top: 16px
+            li.menu-item-has-children:after
+                right: 2px
+            li.current-menu-item.avoid:after
+                display: none
+            .submenu
+                li.current-menu-item:after
+                    width: calc(100vw - 30px)
+                    margin-left: -10px
+            li.current-menu-item
+                a
+                    z-index: 2
+            li.menu-item-has-children:hover 
+                .sub-menu
+                    position: relative
+                    min-width: 100%
+                    float: none
+                    box-shadow: none
+                    border-left: 1px solid $blue
+                    margin: 10px 0
+                    padding: 0
+                    li
+                        font-size: 13px
+                        line-height: 18px
+                        padding: 10px
+        .menulist
+            display: none
+            margin-top: 50px
+            padding-left: 0
+            width: 100vw
+            margin: 38px -30px 0 -15px
+            padding: 0
+            float: none
+        .logo
+            img
+                width: auto
+                height: 60px
+                animation: none !important
+                opacity: 1 !important
+                margin: -10px 0
+                padding: 10px
+        .social-icons
+            padding: 15px 0 25px
+            text-align: center
+        .footersec
+            padding: 20px 15px
+            width: calc(100% + 30px)
+            margin-left: -15px
+            .bg5
+                padding: 10px
+        .footersec.bgoff
+            padding-bottom: 10px
+    #menu-header
+        margin-top: 50px
+        border-top: 1px solid rgba(0,0,0,0.1)
+    .hamburger
+        float: right
+        .nav-icon
+            padding-top: 6px
+        .nav-icon div
+            width: 30px
+            background-color: #000
+            border-radius: 3px
+            content: ''
+            display: block
+            height: 3px
+            margin: 5px 0
+            transition: all .2s ease-in-out
+    .header
+        -webkit-transition: -webkit-transform 0.5s ease-in-out
+        transition: -webkit-transform 0.5s ease-in-out
+        transition: transform 0.5s ease-in-out
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out
+        background: #FFF
+        padding-bottom: 10px
+        box-shadow: 0 0 12px rgba(0,0,0,0.1)
+    .header.scroll-up
+        -webkit-transform: translateY(-100px)
+        transform: translateY(-100px)
+        .menulist
+            display: none !important
+    .header.scroll-up.scroll-stay
+        transform: none !important
+    .opened
+        .header
+            padding-bottom: 0
+            z-index: 5
+            .hamburger
+                .nav-icon
+                    div:nth-child(1)
+                        transform: translateY(8px) rotate(135deg)
+                    div:nth-child(2)
+                        transform: translateY(0px) rotate(-135deg)
+                    div:nth-child(3)
+                        transform: scale(0)
+        .header-stopper
+            background: rgba(0,0,0,0.1)
+            height: 100vh
+            width: 100vw
+            position: fixed
+            top: 54px
+            z-index: 999
+
+@media (max-width: 767px)
+    .header .social-icons a
+        padding-left: 15px
+        padding-right: 15px
+    .header .social-icons a svg
+        width: 30px
+        height: 30px
+
+@media (max-width: 320px)
+    .header .social-icons a svg
+        width: 25px
+        height: 25px

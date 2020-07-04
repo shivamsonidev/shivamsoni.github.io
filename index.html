@@ -10,8 +10,23 @@
         <title>ShivamSoni.Dev | Front-end Developer</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link href="./style.css" rel="stylesheet">
-        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+        <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#1C8FFA">
+        <meta name="theme-color" content="#1C8FFA">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!-- <script src="./js/default.js"></script> -->
@@ -35,159 +50,268 @@
         <meta name="twitter:title" content="ShivamSoni.Dev | Front-end Developer" />
         <meta name="twitter:description" content="Front-end Developer based out of Mumbai with experience in HTML, CSS, JS and React." />
         <meta name="twitter:image" content="http://shivamsoni.dev/img/shivam-main-banner.jpg" />
+        <script src="./script.js"></script>
     </head>
     <body>
+        <div class="container-fluid nopad headstart">
+            <ul class="header container">
+                <a href="https://shivamsoni.dev/" class="logo"><img src="./img/shivam-soni-dev-logo.svg"></a>
+                <span class="hamburger visible-xs">
+                    <div class="nav-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </span>
+                <div class="menulist p2">
+                    <div class="menu-header-container">
+                        <ul id="menu-header" class="menu">
+                            <li id="menu-item-1" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1"><a href="#work">work</a></li>
+                            <li id="menu-item-2" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1"><a href="#about">about</a></li>
+                            <li id="menu-item-3" class="button menu-item menu-item-type-custom menu-item-object-custom menu-item-3"><a href="mailto:shivamsonidev@gmail.com"><span>get in touch</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
         <div class="page-container">
-            <div class="landing-page-banner">
-                <div class="banner-image">
-                    <div class="container nopad">
-                        <div class="col-md-6 col-md-offset-6 col-sm-12 col-xs-12 textual">
-                            <div class="logo-image-holder">
-                                <img src="./img/shivam-soni-dev-logo.svg" alt="Shivam Soni.Dev">
-                            </div>
-                            <p class="p1 banner-body-copy">Hi, my name is Shivam and I am a skilled Front-end Developer based out of Mumbai with experience in HTML, CSS, JS and React.</p>
-                            <div class="banner-work-button">
-                                <a href="#work"><div class="button bold p1"><span class="button-content">See Projects</span></div></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="landing-page-work" id="work">
-                <div class="work-headline">
-                    <div class="container nopad">
-                        <div class="col-xs-12">
-                            <h2 class="chivo">Featured Work</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-projects">
-                    <div class="container nopad">
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="https://socialstar.org/" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-socialstar.png" alt="SocialStar" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">Socialstar</p>
-                                        <p class="copy p2">A platform where you can sign up for sessions led by experts in your field of interest while getting involved with children from their local community.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="https://habitatindia.org/" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-habitat.png" alt="Habitat for Humanity" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">Habitat for Humanity</p>
-                                        <p class="copy p2">An informational website for the indian branch of the Global NGO - Habitat for Humanity who is anchored around to ending the cycle of poverty housing.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="http://atma.org.in" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-atma.png" alt="Atma Education" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">Atma Education</p>
-                                        <p class="copy p2">An informational Wordpress website of a Foundation that acts as an accelerator for NGO’s in education.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="https://rangsutra.com/" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-rangsutra.png" alt="Rangsutra" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">Rangsutra</p>
-                                        <p class="copy p2">An informational Wordpress website about selling clothes directly from the hands of Rajhasthani artisans.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="https://developmentalpediatrics.net/" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-idpa.png" alt="IDPA" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">IDPA</p>
-                                        <p class="copy p2">Branding + Content + Designing + Web Development <br/>For a website about an international meet of fellows to discuss child health & how to improve it.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="http://manndeshifoundation.org" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-manndeshi.png" alt="Mann Deshi Foundation" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">Mann Deshi Foundation</p>
-                                        <p class="copy p2">An informational Wordpress website of the Financial NGO of the same name that helps out rural entrepreneurs and empowers women in rural Maharashtra.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="https://321-foundation.org/" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-321.png" alt="321 Education Foundation" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">321 Education Foundation</p>
-                                        <p class="copy p2">An informational static HTML website of a Foundation that runs empowerment programmes in public & government schools.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="work-containers col-md-6 col-sm-6 col-xs-12">
-                            <a href="/ali-block" target="_blank">
-                                <div class="work-card">
-                                    <div class="card-image">
-                                        <img src="./img/mock-alipaige.png" alt="Ali's Portfolio" />
-                                    </div>
-                                    <div class="card-content">
-                                        <p class="title p1 bold">Ali's Portfolio</p>
-                                        <p class="copy p2">First Collaboration on the developing a website for and with a fellow colleague.</p>
-                                        <div class="block-button p2">View Project</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="landing-contact" id="contact">
+            <div class="landing-page-banner padt150 padb100">
                 <div class="container nopad">
-                    <div class="col-md-12 col-sm-12 col-xs-12 email-id">
-                        <p class="p1 nomar">
-                            <a href="mailto:shivamsonidev@gmail.com">
-                                <span>
-                                    <img src="./img//mail_24px.svg" alt="Mail Icon">
-                                </span>shivamsonidev@gmail.com
-                            </a>
-                        </p>
+                    <div class="col-md-8 col-sm-12 col-xs-12 textual">
+                        <h1 class="bigger h2xs fw7 nomartop padb25">Shaping & designing your ideas to bring beautiful digital experiences to life</h1>
+                        <div class="banner-work-button">
+                            <a href="#contact"><div class="but bold p1"><span class="but-content">Get in Touch</span></div></a>
+                        </div>
+                    </div>
+                    <div class="imagecontainer col-md-4 col-sm-12 col-xs-12 textual hidden-sm hidden-xs">
+                        <img src="./img/create-pana.svg" alt="Branding Image" />
+                    </div>
+                </div>
+            </div>
+            <div class="landing-page-clients" id="clients">
+                <div class="client-container">
+                    <div class="container nopad">
+                        <div class="col-md-6 col-xs-12 padt150 padb25">
+                            <h2 class="fw3 white marb25">Providing digital solutions and websites for organizations in the<br class="hidden-sm hidden-xs"/> <b>social & financial sectors</b></h2>
+                            <p class="p2 white">With every project I implement latest technologies<br class="hidden-sm hidden-xs"/> to help ease the use for the clients and consumers.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="clients row">
+                                <div class="col-md-4 col-sm-4 col-xs-6 single small">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single big">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single smaller">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single big">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single bigger">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single bigger">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single bigger">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single bigger">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single big">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single bigger">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6 single">
+                                    <div class="imagecontainer"><div class="image"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-page-work bg-lighter-blue padb100" id="work">
+                <div class="work-headline">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1 class="fw7 h2xs">Previous Work</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-projects padt25">
+                    <div class="container">
+                        <div class="row grid">
+                            <div class="col-xs-12">
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-habitat-website.png" alt="Habitat for Humanity" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">Habitat for Humanity's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">An informational website for the indian branch of the Global NGO - Habitat for Humanity who is anchored around to ending the cycle of poverty housing.</p>
+                                            <a href="https://habitatindia.org/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-atma-website.png" alt="Atma Education" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">Atma Education's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">An informational Wordpress website of a Foundation that acts as an accelerator for NGO’s in education.</p>
+                                            <a href="http://atma.org.in/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-akanksha-website.png" alt="Akanksha Foundation Website" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">Akanksha Foundation's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">An informational Wordpress website of the Financial NGO of the same name that helps out rural entrepreneurs and empowers women in rural Maharashtra.</p>
+                                            <a href="http://akanksha.org/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-akanksha-report.png" alt="Akanksha Annual Report" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">Akanksha's <span class="fw3 blue">Digital Annual Report</span></h3>
+                                            <p class="copy p2">Mini website of the digital version of the annual report for Akanksha Organization</p>
+                                            <a href="/akanksha-report/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-rangsutra-website.png" alt="Rangsutra" />
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="title fw7 nomarb">Rangsutra's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">An informational Wordpress website about selling clothes directly from the hands of Rajhasthani artisans.</p>
+                                            <a href="https://rangsutra.com/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-321-website.png" alt="321 Education Foundation" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">321 Education Foundation's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">Web Development <br/>An informational static HTML website of a Foundation that runs empowerment programmes in public & government schools.</p>
+                                            <a href="https://321-foundation.org/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-idpa-website.png" alt="International Developmental Pediatrics Association" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">IDPA's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">Branding + Content + Designing + Web Development <br/>For a website about an international meet of fellows to discuss child health & how to improve it.</p>
+                                            <a href="https://developmentalpediatrics.net/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-mann-deshi-foundation-website.png" alt="Mann Deshi Foundation" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">Mann Deshi Foundation's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">An informational Wordpress website of the Financial NGO of the same name that helps out rural entrepreneurs and empowers women in rural Maharashtra.</p>
+                                            <a href="https://manndeshifoundation.org/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-andfwd-website.png" alt="FWD Financial Services" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">FWD's <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">An informational Wordpress website of a Startup based out of UAE that specializes in providing financial & advisory services.</p>
+                                            <a href="https://andfwd.com/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-containers col-md-6 col-sm-6 col-xs-12">
+                                    <div class="work-card">
+                                        <div class="card-image">
+                                            <img src="./img/mock-alipaige.png" alt="International Developmental Pediatrics Association" />
+                                        </div>
+                                        <div class="content-card nopad col-xs-12">
+                                            <h3 class="title fw7 nomarb">Ali's Portfolio <span class="fw3 blue">website</span></h3>
+                                            <p class="copy p2">A resume-<i>esque</i> mini website for an up and coming Ballerina and a friend.</p>
+                                            <a href="http://alipaigeblock.com/" target="_blank"><div class="block-but blu p3"><span class="but-content">View Website</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-page-about bg-lighter-blue padb100" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner-container padt150 padb50 col-xs-12">
+                            <div class="bgww black pad5030 col-md-5 col-sm-7 col-xs-12">
+                                <h2 class="fw7 nomartop">Hi there!</h2>
+                                <p class="p2 nomar padb25">My name is Shivam Soni. I have worked as a skilled product developer, web developer and designer in many startups that gave me the worldview of digital product sector. I know how to code and my humble nature have always helped me create better experiences for my clients and understand their needs. </p>
+                                <p class="p2 nomar">Let's chat about your business challenges.</p>
+                                <div class="technologies row hidden">
+                                    <div class="col-md-6 col-xs-12"><p class="p3 fw7">HTML & CSS / SASS</p></div>
+                                    <div class="col-md-6 col-xs-12"><p class="p3 fw7">PHP</p></div>
+                                    <div class="col-md-6 col-xs-12"><p class="p3 fw7">WORDPRESS</p></div>
+                                    <div class="col-md-6 col-xs-12"><p class="p3 fw7">JAVASCRIPT (ES6+)</p></div>
+                                    <div class="col-md-6 col-xs-12"><p class="p3 fw7 nomar">REACT</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-contact bg-black padtb100" id="contact">
+                <div class="container nopad">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 email-id text-center">
+                        <h1 class="white fw7">Have a problem that needs solving?</h1>
+                        <p class="white p1 marb25">I am available for freelance and contract projects. If you think I would be a good fit for your next project, feel free to drop an email.</p>
+                        <a href="mailto:shivamsonidev@gmail.com" target="_blank"><div class="block-but p1"><span class="but-content">shivamsonidev@gmail.com</span></div></a>
                     </div>
                 </div>
             </div>
