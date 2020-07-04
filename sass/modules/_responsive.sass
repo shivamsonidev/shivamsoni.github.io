@@ -30,13 +30,18 @@
 
 // @media (min-width: 1025px) and (max-width: 1280px)
 
-// @media (min-width: 992px) and (max-width: 1024px)
+@media (min-width: 992px) and (max-width: 1024px)
+    .landing-page-clients
+        .client-container 
+            .container:before
+                left: calc( (920px - 100vw) /2)
 
 @media (min-width: 768px) and (max-width: 991px)
     .landing-page-clients
         background-color: $black
         padding-bottom: 30px
         margin-top: 0
+        margin-bottom: 0
         .padt150
             padding-top: 50px
         .client-container 
@@ -71,6 +76,7 @@
                     width: initial
     .landing-page-clients
         margin-top: -125px
+        background-color: $black
         .client-container 
             .container:before
                 left: 0
