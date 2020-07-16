@@ -8,7 +8,6 @@ $(document).ready(function(){
     });
 
     function checkHomeMenu() {
-        // var aTop = $('#about').offset().top - $('.headstart').height();
         var menuTop = $('.headstart').height();
         if($(window).scrollTop()>=menuTop){
             $('.headstart').addClass('scrolled');
@@ -20,9 +19,7 @@ $(document).ready(function(){
     function showClients(i) {
         setTimeout(function() {
             if(i<16) {
-                $(`.clients .single:nth-child(`+i+`)`).addClass('fadenow');
-                // var tc = setTimeout(showClients(i+1), 1000 * i);
-                
+                $(`.clients .single:nth-child(`+i+`)`).addClass('fadenow');                
             }
             showClients(i+1);
         }, 200);

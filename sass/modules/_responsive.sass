@@ -28,13 +28,25 @@
                     padding-left: 20px
                     padding-right: 0
 
-// @media (min-width: 1025px) and (max-width: 1280px)
+@media (min-width: 1025px) and (max-width: 1280px)
+    .landing-page-clients
+        .client-container 
+            .container:before
+                left: calc( (970px - 100vw) /2)
+    .landing-page-about
+        .banner-container:before
+            background-position: 30% center
+            background-size: cover
 
 @media (min-width: 992px) and (max-width: 1024px)
     .landing-page-clients
         .client-container 
             .container:before
                 left: calc( (920px - 100vw) /2)
+    .landing-page-about
+        .banner-container:before
+            background-position: 20% center
+            background-size: cover
 
 @media (min-width: 768px) and (max-width: 991px)
     .landing-page-clients
@@ -51,7 +63,8 @@
         padding-top: 30px
     .landing-page-about
         .banner-container:before
-            background-position: 80% center
+            background-position: 43% center
+            background-size: 170%
     .landing-contact
         padding: 75px 0
 
@@ -75,11 +88,23 @@
                     font-size: 17px
                     width: initial
     .landing-page-clients
-        margin-top: -125px
+        margin-top: -25px
+        padding-bottom: 20px
+        margin-bottom: 0
         background-color: $black
+        .padt150
+            padding-top: 30px
         .client-container 
             .container:before
                 left: 0
+            .clients
+                .single
+                    .imagecontainer
+                        margin-bottom: 15px
+                    &:nth-child(odd)
+                        padding-right: 7.5px
+                    &:nth-child(even)
+                        padding-left: 7.5px
     .landing-page-about 
         padding-bottom: 0
         .banner-container
@@ -89,13 +114,16 @@
                 background-position: right center
                 height: 250px
                 box-shadow: none
-                background-size: 200%
+                background-size: cover
             .pad5030
                 padding: 30px 20px
                 margin-bottom: -30px
                 z-index: 2
     .landing-page-work
+        padding-top: 20px
         padding-bottom: 0
+        .work-headline
+            text-align: center
         .work-projects
             .work-containers
                 padding-left: 0
