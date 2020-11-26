@@ -1,5 +1,5 @@
 .page-container
-    background: #fbf9ff
+    background: #fff
     
 .landing-page-banner
     background-attachment: fixed
@@ -28,10 +28,11 @@
             background-color: #FFF
             background-image: url('./img/shivam-soni-dev-banner.jpg')
             box-shadow: $mediumblue 15px -15px 0px, $lightblue 30px -30px 0px
+            border: 1px solid $gray
             z-index: 1
         .content
             z-index: 2
-            box-shadow: 4px 1px 7px 0 rgba(0,0,0,0.2)
+            border: 1px solid $gray
 
 .landing-page-work
     .work-projects
@@ -50,16 +51,7 @@
 
 .landing-page-clients
     z-index: 2
-    margin-top: -50px
-    margin-bottom: -100px
-    .client-container .container:before
-        content: ''
-        height: 77%
-        width: 100vw
-        position: absolute
-        top: 8%
-        left: calc( (1170px - 100vw) /2 )
-        background-color: $black
+    background-color: #3e3e3e
     .clients
         .single
             .imagecontainer
@@ -93,33 +85,21 @@
         .single:nth-child(1) .imagecontainer .image
             background-image: url('./img/clients/321.svg')
         .single:nth-child(2) .imagecontainer .image
-            background-image: url('./img/clients/akanksha.svg')
-        .single:nth-child(3) .imagecontainer .image
             background-image: url('./img/clients/atma.svg')
-        .single:nth-child(4) .imagecontainer .image
+        .single:nth-child(3) .imagecontainer .image
             background-image: url('./img/clients/fwd.svg')
-        .single:nth-child(5) .imagecontainer .image
-            background-image: url('./img/clients/habitat.svg')
-        .single:nth-child(6) .imagecontainer .image
-            background-image: url('./img/clients/isli.svg')
-        .single:nth-child(7) .imagecontainer .image
-            background-image: url('./img/clients/idpa.svg')
-        .single:nth-child(8) .imagecontainer .image
-            background-image: url('./img/clients/mdb.svg')
-        .single:nth-child(9) .imagecontainer .image
-            background-image: url('./img/clients/mdf.svg')
-        .single:nth-child(10) .imagecontainer .image
-            background-image: url('./img/clients/rangsutra.svg')
-        .single:nth-child(11) .imagecontainer .image
-            background-image: url('./img/clients/sneha.svg')
-        .single:nth-child(12) .imagecontainer .image
-            background-image: url('./img/clients/socialstar.svg')
-        .single:nth-child(13) .imagecontainer .image
-            background-image: url('./img/clients/tbrm.svg')
-        .single:nth-child(14) .imagecontainer .image
+        .single:nth-child(4) .imagecontainer .image
             background-image: url('./img/clients/tdel.svg')
-        .single:nth-child(15) .imagecontainer .image
-            background-image: url('./img/clients/treelife.svg')
+        .single:nth-child(5) .imagecontainer .image
+            background-image: url('./img/clients/idpa.svg')
+        .single:nth-child(6) .imagecontainer .image
+            background-image: url('./img/clients/mdb.svg')
+        .single:nth-child(7) .imagecontainer .image
+            background-image: url('./img/clients/mdf.svg')
+        .single:nth-child(8) .imagecontainer .image
+            background-image: url('./img/clients/rangsutra.svg')
+        .single:nth-child(9) .imagecontainer .image
+            background-image: url('./img/clients/socialstar.svg')
 
 @keyframes fadeIn
     0% 
@@ -129,6 +109,5 @@
 
 .landing-contact
     .email-id
-        .block-but:hover, .block-but:focus
-            background: $blue
-            color: #FFF
+        .block-but
+            padding: 1.5rem 3rem
