@@ -1,64 +1,114 @@
+.card-bordered
+    border: 1px solid #fff
+    background-color: rgba(255, 255, 255, 0.03)
+    border-radius: 10px
+
 .page-container
-    background: #fff
+    @include bgdef
+    background-color: #111
+    background-image: url("./img/galaxy-dots.png")
+    min-height: 100vh
+    .page-bg
+        position: fixed
+        filter: blur(150px)
+        top: 0
+        left: 0
+        height: 100vh
+        width: 100vw
+        .circle-container
+            position: relative
+            .circle
+                content: ""
+                width: 20vw
+                height: 20vw
+                border-radius: 50%
+                position: absolute
+                opacity: 0.65
+                transition: all 2s ease-in-out
+                &.red
+                    top: 0
+                    left: 60vw
+                    background: red
+                &.blue
+                    top: 20vh
+                    left: 50vw
+                    background: blue
+                &.green
+                    top: 35vh
+                    left: 70vw
+                    background: green
+    .page-bg.section-2
+        .circle-container
+            .circle
+                animation: none
+                &.red
+                    top: 35vh
+                    left: 65vw
+                &.green
+                    top: 35vh
+                    left: 20vw
+                &.blue
+                    top: 35vh
+                    left: 40vw
+    .page-bg.section-3
+        .circle-container
+            .circle
+                width: 35vw
+                height: 35vw
+                animation: none
+                &.red
+                    top: 85vh
+                    left: 40vw
+                &.green
+                    top: 0
+                    left: 80vw
+                &.blue
+                    top: 10vh
+                    left: 0
+    .page-bg.section-4
+        .circle-container
+            .circle
+                width: 50vw
+                height: 50vw
+                animation: none
+                opacity: 0.25
+                &.red
+                    top: 35vh
+                    left: 70vw
+                &.blue
+                    top: 20vh
+                    left: 50vw
+                &.green
+                    top: 0
+                    left: 0 
+                    background: purple
+    .page-bg.section-5
+        .circle-container
+            .circle
+                width: 50vw
+                height: 50vw
+                animation: none
+                &.red
+                    top: 80vh
+                    left: 30vw
+                &.green
+                    top: 80vh
+                    left: 60vw
+                &.blue
+                    top: 80vh
+                    left: -10vh
     
-.landing-page-banner
-    background-attachment: fixed
-    background-color: #fff
-    background-image: url("./img/svg-banner-background.svg")
-    background-position: top center
+.banner
     .imagecontainer
         img
-            width: 130%
-            margin-left: -15%
-            margin-top: -10%
+            width: 80%
+            margin-left: 20%
 
-.landing-page-about
-    .banner-container
-        &:before
-            content: ""
-            position: absolute
-            width: calc(100% - 30px)
-            height: 100%
-            top: 0
-            left: 15px
-            z-index: -1
-            @include bgdef
-            background-position: right center
-            background-size: contain
-            background-color: #FFF
-            background-image: url('./img/shivam-soni-dev-banner.jpg')
-            box-shadow: $mediumblue 15px -15px 0px, $lightblue 30px -30px 0px
-            border: 1px solid $gray
-            z-index: 1
-        .content
-            z-index: 2
-            border: 1px solid $gray
-
-.landing-page-work
-    .work-projects
-        .work-containers
-            padding-bottom: 50px    
-            .work-card
-                position: relative
-                width: 100%
-                .card-image
-                    img
-                        border-radius: 7px
-                        width: 100%
-                        box-shadow: 0 0 10px rgba(0,0,0,0.2)
-            &:nth-child(odd)
-                clear: both
-
-.landing-page-clients
-    z-index: 2
-    background-color: #3e3e3e
+.clients
     .clients
+        .row
+            row-gap: 30px
         .single
-            .imagecontainer
-                background-color: #FFF
-                margin-bottom: 30px
-                box-shadow: 0 0 4px 0 rgba(0,0,0,0.2)
-                border-radius: 3px
             .image
                 @include bgdef
                 background-size: 60%
@@ -66,7 +116,7 @@
                 opacity: 0
         .single.fadenow
             .image
-                animation: fadeIn forwards 0.15s ease-in
+                animation: fadeIn forwards 1s ease-in
         .single.smaller
             .image
                 background-size: 30%
@@ -82,24 +132,38 @@
         .carousel-indicators
             bottom: -20px
     .clients
-        .single:nth-child(1) .imagecontainer .image
-            background-image: url('./img/clients/321.svg')
-        .single:nth-child(2) .imagecontainer .image
-            background-image: url('./img/clients/atma.svg')
-        .single:nth-child(3) .imagecontainer .image
+        .single:nth-child(1) .image
+            background-image: url('./img/clients/aapti.svg')
+        .single:nth-child(2) .image
+            background-image: url('./img/clients/del.svg')
+        .single:nth-child(3) .image
+            background-image: url('./img/clients/dpl.svg')
+        .single:nth-child(4) .image
+            background-image: url('./img/clients/sols.svg')
+        .single:nth-child(5) .image
+            background-image: url('./img/clients/vacha.svg')
+        .single:nth-child(6) .image
+            background-image: url('./img/clients/cgl.svg')
+        .single:nth-child(7) .image
             background-image: url('./img/clients/fwd.svg')
-        .single:nth-child(4) .imagecontainer .image
-            background-image: url('./img/clients/tdel.svg')
-        .single:nth-child(5) .imagecontainer .image
+        .single:nth-child(8) .image
+            background-image: url('./img/clients/321.svg')
+        .single:nth-child(9) .image
+            background-image: url('./img/clients/atma.svg')
+        .single:nth-child(10) .image
             background-image: url('./img/clients/idpa.svg')
-        .single:nth-child(6) .imagecontainer .image
+        .single:nth-child(11) .image
             background-image: url('./img/clients/mdb.svg')
-        .single:nth-child(7) .imagecontainer .image
+        .single:nth-child(12) .image
             background-image: url('./img/clients/mdf.svg')
-        .single:nth-child(8) .imagecontainer .image
-            background-image: url('./img/clients/rangsutra.svg')
-        .single:nth-child(9) .imagecontainer .image
-            background-image: url('./img/clients/socialstar.svg')
+        .single:nth-child(13) .image
+            background-image: url('./img/clients/akanksha.svg')
+        .single:nth-child(14) .image
+            background-image: url('./img/clients/habitat.svg')
+        .single:nth-child(15) .image
+            background-image: url('./img/clients/sneha.svg')
+        .single:nth-child(16) .image
+            background-image: url('./img/clients/tbm.svg')
 
 @keyframes fadeIn
     0% 
@@ -107,7 +171,35 @@
     100%
         opacity: 1
 
-.landing-contact
-    .email-id
-        .block-but
-            padding: 1.5rem 3rem
+.banner, .about, .clients, .projects, .product, .contact, .footer
+    z-index: 2
+
+.projects
+    .project-card
+        height: 550px
+        @include bgdef
+        overflow: hidden
+        .row
+            z-index: 1
+    .card
+        overflow: hidden
+        border: none
+        border-radius: 0.5rem
+
+.swiper-button-prev:after, .swiper-button-next:after
+    content: ''
+    display: inline-block
+    font-family: bootstrap-icons !important
+    font-style: normal
+    font-weight: normal !important
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    vertical-align: -0.125em
+    color: #FFF
+
+.swiper-button-prev:after
+    content: "\f129" !important
+
+.swiper-button-next:after
+    content: "\f133" !important

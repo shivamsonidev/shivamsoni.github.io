@@ -7,18 +7,24 @@ $(document).ready(function(){
         }
     });
 
-    function checkHomeMenu() {
-        var menuTop = $('.headstart').height();
-        if($(window).scrollTop()>=menuTop){
-            $('.headstart').addClass('scrolled');
+    function checkForSection(section, classToTrigger) {
+        var menuTop = $(section).offset().top + $(section).outerHeight()/2;
+        if($(window).scrollTop()>menuTop){
+            $('.page-bg').addClass(classToTrigger);
         }
         else {
-            $('.headstart').removeClass('scrolled');
+            $('.page-bg').removeClass(classToTrigger);
         }
+    }
+    function checkBackgroundScroll() {
+        checkForSection('.banner', 'section-2');
+        checkForSection('.about', 'section-3');
+        checkForSection('.clients', 'section-4');
+        checkForSection('.projects', 'section-5');
     }
     function showClients(i) {
         setTimeout(function() {
-            if(i<16) {
+            if(i<=$('.clients .single').length) {
                 $(`.clients .single:nth-child(`+i+`)`).addClass('fadenow');                
             }
             showClients(i+1);
@@ -32,10 +38,10 @@ $(document).ready(function(){
             }
         }
     }
-    checkHomeMenu();
+    checkBackgroundScroll();
     reachedClients();
     $(window).scroll(function(){
-        checkHomeMenu();
+        checkBackgroundScroll();
         reachedClients();
     });
 
@@ -56,7 +62,6 @@ $(document).ready(function(){
         }
     });
     $(".header ul li a").on('click',function(){
-        console.log('a');
         if($(window).width()<992){
             setTimeout(function(){
                 $('.menulist').slideToggle(300);
@@ -65,22 +70,49 @@ $(document).ready(function(){
         }
     });
     
-    // function startTime() {
-    //     var indiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});    
-    //     var today = new Date(indiaTime);
-    //     var h = checkTime(today.getHours());
-    //     var m = checkTime(today.getMinutes());
-    //     var ampm = checkAmPm(h);
-    //     h = h > 12 ? h - 12 : h;
-    //     $('#timetoadd').text( `(` + h + ":" + m  + ' ' + ampm + `)`);
-    //     var t = setTimeout(startTime, 500);
-    // }
-    // function checkAmPm(i) {
-    //     return i < 12 ? 'am' : 'pm';
-    // }
-    // function checkTime(i) {
-    //   if (i < 10) {i = "0" + i};
-    //   return i;
-    // }
-    // startTime();
+    if($('.projects #slider').length) {
+        var aboutPageSlider = new Swiper('.projects #slider', {
+            slidesPerView: 1.2,
+            spaceBetween: 0,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: '.swiper-pagination',
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    loop: true,
+                },
+            },
+        });
+    }
+    
+    function startTime() {
+        var indiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});    
+        var today = new Date(indiaTime);
+        var h = checkTime(today.getHours());
+        var m = checkTime(today.getMinutes());
+        var ampm = checkAmPm(h);
+        h = h > 12 ? h - 12 : h;
+        $('#timetoadd').text( h + ":" + m  + ' ' + ampm );
+        var t = setTimeout(startTime, 500);
+    }
+    function checkAmPm(i) {
+        return i < 12 ? 'am' : 'pm';
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};
+      return i;
+    }
+    startTime();
 });
