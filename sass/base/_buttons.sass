@@ -56,3 +56,28 @@
     font-weight: 700
     &:hover
         background: #222
+
+.btn-primary, .btn-secondary, .btn-yellow, .btn-success
+    padding: 0.5rem 2rem
+    border-radius: 1.5rem
+
+.btn-yellow
+    color: #000
+    background-color: $yellow
+    border-color: $yellow
+    &:hover, &:focus
+        color: #fff
+        background-color: #000
+        border-color: #000
+
+.form-control, .form-control:focus
+    background-color: rgba(255,255,255,0.1)
+    color: #FFF
+    border: 1px solid $gray
+    box-shadow: none
+
+.form-control
+    padding: 1rem
+    height: calc(1.5em + 2rem + 2px)
+    &::placeholder
+        color: #FFF
