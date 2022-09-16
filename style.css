@@ -66,6 +66,11 @@ html, body {
   width: 100%;
   color: #164b7b;
   background: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
 }
 
 body, body.modal-open {
