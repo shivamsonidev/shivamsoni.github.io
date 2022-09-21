@@ -883,7 +883,7 @@ h6, .h6 {
 }
 @media (max-width: 767px) {
   .headstart .header {
-    padding: 10px 15px;
+    padding: 10px 0;
     width: 100%;
     box-shadow: none;
   }
@@ -1195,6 +1195,7 @@ h6, .h6 {
   background-size: 60%;
   min-height: 100px;
   opacity: 0;
+  display: block;
 }
 .clients .clients .single.fadenow .image {
   -webkit-animation: fadeIn forwards 1s ease-in;
@@ -1259,9 +1260,6 @@ h6, .h6 {
 }
 .clients .clients .single:nth-child(15) .image {
   background-image: url("./img/clients/sneha.svg");
-}
-.clients .clients .single:nth-child(16) .image {
-  background-image: url("./img/clients/tbm.svg");
 }
 
 @-webkit-keyframes fadeIn {
