@@ -395,45 +395,18 @@
                 <div class="container">
                     <div class="row white">
                         
-                        <div class="col-12 col-md-7 col-lg-7">
-                            <h1 class="fw2 h4sm">Let’s start a project together</h1>
-                            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                            <form method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate action="https://dev.us17.list-manage.com/subscribe/post?u=b0989ab5e379c1f70549d7396&amp;id=91b2a0b0bd&amp;f_id=00664fe0f0">
-                                <div class="form-group py-3">
-                                    <label for="mce-FNAME">What’s your name?</label>
-                                    <input type="text" class="form-control required" id="mce-FNAME" name="FNAME" aria-describedby="email" placeholder="Type your name here..." required>
-                                </div>
-                                <div class="form-group pb-3">
-                                    <label for="mce-EMAIL">What’s your email?</label>
-                                    <input type="email" class="form-control" id="mce-EMAIL" name="EMAIL" aria-describedby="email" placeholder="Type your email here..." name="EMAIL" required>
-                                </div>
-                                <div class="form-group pb-3">
-                                    <label for="mce-MMERGE2">How would you describe your requirement?</label>
-                                    <input type="text" class="form-control" id="mce-MMERGE2" aria-describedby="requirement" name="MMERGE2" placeholder="Web Development, Design, Branding..." required>
-                                </div>
-                                <button type="submit" class="btn btn-yellow" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Submit</button>
-                                <div id="mce-responses" class="clear foot">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
-                            <h2 class="fw2 h4sm">Have a problem that needs solving?</h2>
-                            <p class="p1 p3sm fw1 martb25">I am available for freelance and contract projects. If you think I would be a good fit for your next project, feel free to drop an email.</p>
-                            <a href="mailto:hello@shivamsonidev" title="hello@shivamsoni.dev"><button class="btn btn-block btn-yellow mb-4"><i class="bi bi-envelope-heart"></i> &nbsp; hello@shivamsoni.dev</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer padb50">
-                <div class="container">
-                    <div class="row white">
-                        <div class="col-4 col-md-6">
-                            <!-- <p class="p3 p4xs martb25"><a href="#">Privacy Policy</a></p> -->
-                        </div>
-                        <div class="col-8 col-md-6">
-                            <p class="p3 p4xs martb25 text-right">from &nbsp; <a title="User:SKopp, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Flag_of_India.svg"><img width="30" alt="Flag of India" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/512px-Flag_of_India.svg.png"></a> &nbsp; with love | <span id="timetoadd">12 pm</span></p>
+                        <div class="col-12">
+                            <h1 class="fw2 h4sm text-center mb-4">Let’s start a project together</h1>
+                            <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+                            <script type="text/javascript">
+                            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                            Cal("init", {origin:"https://app.cal.com"});
+                            Cal("inline", {
+                            elementOrSelector:"#my-cal-inline",
+                            calLink: "shivamsonidev/30min"
+                            });
+                            Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false});
+                            </script>
                         </div>
                     </div>
                 </div>
