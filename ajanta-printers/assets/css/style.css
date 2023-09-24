@@ -527,7 +527,7 @@ section {
 }
 
 .section-bg {
-  padding: 120px 0;
+  padding: 10rem 0;
   color: #fff;
 }
 
@@ -859,7 +859,7 @@ section {
   float: left;
   color: #ED2592;
   font-size: 40px;
-  line-height: 0;
+  line-height: 40px;
 }
 
 .services .icon-box h4 {
