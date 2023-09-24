@@ -496,6 +496,10 @@ section {
   position: relative;
 }
 
+section.no-pb {
+  padding: 60px 0 0;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -591,7 +595,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 5rem;
   position: relative;
 }
 
