@@ -165,15 +165,10 @@
     speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 2000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
     breakpoints: {
       320: {
         slidesPerView: 2,
