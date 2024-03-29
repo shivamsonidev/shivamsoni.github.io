@@ -3,7 +3,7 @@
 /* Version: 1.0.1 */
 @import url("https://fonts.googleapis.com");
 @import url("https://fonts.gstatic.com");
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap");
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -83,6 +83,10 @@ p {
 
 div {
   position: relative;
+}
+
+.imgcont img {
+  width: 100%;
 }
 
 a {
@@ -674,7 +678,7 @@ h6, .h6 {
 }
 
 .accent {
-  color: #FAE41C;
+  color: #1C8FFA;
 }
 
 .headstart {
@@ -1179,10 +1183,6 @@ h6, .h6 {
   top: 80vh;
   left: -10vh;
 }
-.banner .imagecontainer img {
-  width: 80%;
-  margin-left: 20%;
-}
 
 .clients .clients .row {
   row-gap: 30px;
@@ -1272,14 +1272,8 @@ h6, .h6 {
   z-index: 2;
 }
 
-.about .container {
-  background: rgba(110, 93, 181, 0.4);
-  padding: 4rem;
-  border-radius: 1rem;
-}
-
 .projects .project-card {
-  height: 550px;
+  height: 180px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1290,8 +1284,7 @@ h6, .h6 {
 }
 .projects .card {
   overflow: hidden;
-  border: none;
-  border-radius: 0.5rem;
+  color: #FFF;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
@@ -1313,6 +1306,13 @@ h6, .h6 {
 
 .swiper-button-next:after {
   content: "\f133" !important;
+}
+
+.opaque {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: rgba(3, 0, 20, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

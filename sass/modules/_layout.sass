@@ -110,13 +110,13 @@
                 &.blue
                     top: 80vh
                     left: -10vh
-    .cal-inline-container
+    // .cal-inline-container
     
-.banner
-    .imagecontainer
-        img
-            width: 80%
-            margin-left: 20%
+// .banner
+//     .imagecontainer
+//         img
+//             width: 80%
+//             margin-left: 20%
 
 .clients
     .clients
@@ -189,23 +189,22 @@
 .banner, .about, .clients, .projects, .product, .contact, .footer
     z-index: 2
 
-.about
-    .container
-        background: rgba(110, 93, 181, 40%)
-        padding: 4rem
-        border-radius: 1rem
+// .about
+//     .container
+//         background: rgba(110, 93, 181, 40%)
+//         padding: 4rem
+//         border-radius: 1rem
 
 .projects
     .project-card
-        height: 550px
+        height: 180px
         @include bgdef
         overflow: hidden
         .row
             z-index: 1
     .card
         overflow: hidden
-        border: none
-        border-radius: 0.5rem
+        color: #FFF
 
 .swiper-button-prev:after, .swiper-button-next:after
     content: ''
@@ -224,3 +223,9 @@
 
 .swiper-button-next:after
     content: "\f133" !important
+
+.opaque
+    -webkit-backdrop-filter: blur(16px)
+    backdrop-filter: blur(16px)
+    background: rgba(3, 0, 20, .08)
+    border: 1px solid rgba(255, 255, 255, .08)
